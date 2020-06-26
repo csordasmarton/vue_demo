@@ -1,0 +1,43 @@
+{
+  "name": "vue_demo",
+  "version": "1.0.0",
+  "description": "Vue demo.",
+  "author": "Márton Csordás",
+  "private": true,
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js",
+    "server:dev": "cross-env NODE_ENV=development webpack-dev-server --hot --inline --progress --config config/webpack.dev.js",
+    "server:prod": "http-server dist -c-1 --cors",
+    "server": "npm run server:dev",
+    "start": "npm run server"
+  },
+  "dependencies": {
+    "vue": "^2.6.11",
+    "vue-router": "^3.3.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "core-js": "^3.6.5",
+    "css-loader": "^3.6.0",
+    "cross-env": "^7.0.2",
+    "deepmerge": "^4.2.2",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "regenerator-runtime": "^0.13.5",
+    "rimraf": "^3.0.2",
+    "sass": "^1.26.8",
+    "sass-loader": "^8.0.2",
+    "start-server-and-test": "^1.11.0",
+    "vue-loader": "^15.9.2",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^4.2.2"
+  }
+}
